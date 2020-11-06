@@ -1,0 +1,19 @@
+import axios from "axios";
+
+export default axios.create({
+  baseURL: "http://localhost:8080/api",
+  //baseURL: "http://portable.labonlocale.com/api",
+  headers: {
+    "Content-type": "application/json"
+  }
+});
+
+// export default axios.create({
+//   baseURL: "http://localhost:8080/api",
+//   withCredentials: false,
+//   headers: {
+//   'Access-Control-Allow-Origin' : '*',
+//   'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+//   "Content-type": "application/json"
+//   }
+// });
